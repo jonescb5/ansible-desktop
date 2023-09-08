@@ -51,6 +51,7 @@
       value: "true"
 
   - name: Add the flathub flatpak repository remote to the user installation
+    become_user: chrispy
     community.general.flatpak_remote:
       name: flathub
       state: present
