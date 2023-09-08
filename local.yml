@@ -58,6 +58,7 @@
       method: user
 
   - name: Install the spotify flatpak
+    become_user: chrispy
     community.general.flatpak:
       name: com.spotify.Client
       state: present
