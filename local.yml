@@ -30,3 +30,9 @@
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
 
+  - name: set dark mode
+    become_user: chrispy
+    dconf:
+      key: "/org/gnome/desktop/interface/color-scheme"
+      value: "'prefer-dark'"
+
