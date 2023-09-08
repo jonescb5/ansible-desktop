@@ -36,3 +36,14 @@
       key: "/org/gnome/desktop/interface/color-scheme"
       value: "'prefer-dark'"
 
+  - name: terminal - set dark mode
+    become_user: chrispy
+    dconf:
+      key: "/org/gnome/terminal/legacy/theme-variant"
+      value: "'dark'"
+
+  - name: terminal - set mnemonics enabled
+    become_user: chrispy
+    dconf:
+      key: "/org/gnome/terminal/legacy/mnemonics-enabled"
+      value: "true"
