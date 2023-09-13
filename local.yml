@@ -72,9 +72,9 @@
       state: present
       method: user
 
-  - name: Install libreoffice flatpak
-    become_user: chrispy
-    community.general.flatpack:
-      name: org.libreoffice.LibreOffice
-      state: present
-      method: user
+#  - name: Install libreoffice flatpak
+#    become_user: chrispy
+#    community.general.flatpack:
+#      name: org.libreoffice.LibreOffice
+#      state: present
+#      method: user
