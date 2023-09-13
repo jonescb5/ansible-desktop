@@ -78,4 +78,3 @@
       name: org.libreoffice.LibreOffice
       state: present
       method: user
-
